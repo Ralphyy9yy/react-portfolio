@@ -13,7 +13,7 @@ const navItems = [
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-    const[isMenuOpen, setIsMenuOpen] = useState(true);
+    const[isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,6 +26,18 @@ export const NavBar = () => {
         window.removeEventListener("scroll", handleScroll);
     }
   }, []);
+
+  useEffect(() => {
+
+      if(isMenuOpen){
+        document.body.style.overflow ="hidden";
+
+      }else{
+        document.body.style.overflow = "";
+
+      }
+      
+  },[isMenuOpen]);
   return (
     <nav className={cn("fixed w-full z-40 transition-all duration-300", 
         isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
@@ -38,13 +50,13 @@ export const NavBar = () => {
             >
                 <span className = "relative z-10">
                  
-                <span className = "text-glow text-foreground ">Ralph Giann</span> {" "}
-                 Portfolio
+                <span className = "text-glow text-foreground "> Port</span> {""}
+            folio
                 </span>
             </a>
 
             {/* Desktop nav */}
-            <div className = "hidden md:flex space-x-8">
+            <div className = "hidden md:flex space-x-8 ">
                 {navItems.map((item) => (
                     <a href = {item.href} 
                        key = {item.name} 
@@ -66,8 +78,9 @@ export const NavBar = () => {
              </button>
             <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
                 "transition-all duration-300 md:hidden",
-                isMenuOpen ? "opacity-100 pointer-events-none"
-                : "opacity-0 pointer-events-none"
+                isMenuOpen ? "opacity-90 pointer-events-auto"
+                : "opacity-0 pointer-events-none",
+                 " pt-110 pb-110"
 
             )}>
               <div className = "flex flex-col space-y-8 text-xl ">

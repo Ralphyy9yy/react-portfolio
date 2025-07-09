@@ -40,13 +40,13 @@ export const ContactSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
-          <div className="space-y-8">
-            <h2 className="text-2xl font-semibold mb-6">
+          <div className="space-y-8 ">
+            <h2 className="text-2xl font-semibold mb-10 md:relative pl-auto">
               {" "}
               Contact Information
             </h2>
 
-            <div className="space-y-6 justify-center ">
+            <div className="space-y-6 justify-center md:relative pl-15 lg:pl-20">
               <div className="flex items-start space-x-4 ">
                 <div className="p-3 rounded full bg-primary/10 ">
                   <Mail className="w-6 h-6 text-primary " />
@@ -87,7 +87,7 @@ export const ContactSection = () => {
                 </div>
               </div>
             </div>
-            <div className="pt-8">
+            <div className="pt-9">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
                 <a href="">
@@ -99,7 +99,7 @@ export const ContactSection = () => {
                 >
                   <Facebook />
                 </a>
-                <a href="" target="_blank">
+                <a href="https://www.instagram.com/brrt.brrtt/?__pwa=1" target="_blank">
                   <Instagram />
                 </a>
                 <a href="" target="_blank">
