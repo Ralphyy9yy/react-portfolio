@@ -9,14 +9,14 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-x-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight ">
-            <span className="opacity-0 animate-fade-in">Hi I am</span>
+            <span className="opacity-0 animate-fade-in">Hi pakess</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               {" "}
-              Ralph
+              naman
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Giann
+             airesh huhu
             </span>
           </h1>
 

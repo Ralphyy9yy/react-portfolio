@@ -30,7 +30,7 @@ const projects = [
         image: "/projects/project2.png",
         tags: ["MongoDB", "Express", "React", "Node"],
         demoUrl: "#",
-        githubUrl: "#",
+        githubUrl: "https://online-resort-booking-wyyi-glh9e153k-ralphs-projects-c948890a.vercel.app",
 
     },
 
